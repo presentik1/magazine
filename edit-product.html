@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редактировать товар</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Редактировать товар</h1>
+
+<form id="editProductForm">
+    <input type="text" id="model" placeholder="Модель" required />
+    <input type="text" id="shade" placeholder="Оттенок" required />
+    <input type="number" id="quantity" placeholder="Количество" required />
+    <input type="number" id="wholesalePrice" placeholder="Цена опт" required />
+    <input type="number" id="price" placeholder="Цена" required />
+    <input type="file" id="productImage" accept="image/*" />
+    <button type="submit">Сохранить</button>
+</form>
+
+<!-- Сообщение о сохранении -->
+<div id="savedMessage" style="display:none; color: green; margin-top: 20px;">
+    Сохранено!
+</div>
+
+<!-- Кнопка "Назад к товарам" скрыта, пока не сохранено -->
+<a href="index.html"><button id="backButton" class="button">Назад к товарам</button></a>
+
+<script src="script.js"></script>
+</body>
+</html>

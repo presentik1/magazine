@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить товар</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Добавить товар</h1>
+
+<form id="addProductForm">
+    <label for="model">Модель</label>
+    <input type="text" id="model" required><br>
+
+    <label for="shade">Оттенок</label>
+    <input type="text" id="shade" required><br>
+
+    <label for="quantity">Количество</label>
+    <input type="number" id="quantity" required><br>
+
+    <label for="wholesalePrice">Цена опт</label>
+    <input type="number" id="wholesalePrice" required><br>
+
+    <label for="price">Цена</label>
+    <input type="number" id="price" required><br>
+
+    <label for="productImage">Фото</label>
+    <input type="file" id="productImage" accept="image/*"><br>
+
+    <button type="submit">Добавить товар</button>
+</form>
+
+<a href="index.html"><button class="button">Назад к товарам</button></a>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
